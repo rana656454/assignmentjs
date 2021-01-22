@@ -27,15 +27,15 @@ console.log (kilometerToMeter(1))
 
 // Budget Calculator
 
-function budgetCalculator(watch,mobile,laptop) {
+function budgetCalculator(buyWatch,buyMobile,buyLaptop) {
 
 
-if(isNaN(watch)||isNaN(mobile)||isNaN(laptop)){
+if(isNaN(buyWatch)||isNaN(buyMobile)||isNaN(buyLaptop)){
 
     return " plese input a valid number"
 }
 
-else if(watch<0 || mobile<0 ||laptop<0)
+else if(buyWatch<0 || buyMobile<0 ||buyLaptop<0)
 {
     return "Price cannot be negative"
 }
@@ -45,11 +45,11 @@ else{
    var mobilePrice=100
    var laptopPrice=500
 
-   var budgetForWatch = watchPrice*watch
+   var budgetForWatch = watchPrice*buyWatch
 
-   var budgetForMobile = mobilePrice*mobile
+   var budgetForMobile = mobilePrice*buyMobile
 
-   var budgetForlaptop = laptopPrice*laptop
+   var budgetForlaptop = laptopPrice*buyLaptop
 
    var totalBudget=budgetForWatch+budgetForMobile+budgetForlaptop
 
@@ -103,40 +103,40 @@ console.log(hotelCost(100))
 
 // Mega Friend
 
-function megaFriend(myFriend) {
+function megaFriend(myFriends) {
   
-    if(!Array.isArray(myFriend)){
+    if(!Array.isArray(myFriends)){
         return "this is not a arry. myFriend must be a array"
     }
 
-   else if(myFriend.length<=0){
+   else if(myFriends.length<=0){
        return "this is empty array"
  }
 
 
 else{
-    var maxlengthName = 0
-    var maxName = ""
-    for(var i=0; i<=myFriend.length-1; i++){
+    var maxlength = 0
+    var maxlengthName = ""
+    for(var i=0; i<=myFriends.length-1; i++){
 
-     var lengthName = myFriend[i].length
+     var lengthName = myFriends[i].length
 
-     if(maxlengthName<lengthName){
-         maxlengthName=myFriend[i].length
-         maxName=myFriend[i]
+     if(maxlength<lengthName){
+         maxlength=myFriends[i].length
+         maxlengthName=myFriends[i]
         
      }
           
     }
 
-    return maxName
+    return maxlengthName
 
 }
   
 }
 
 
-console.log(megaFriend(["rana","dfdff","ffdfdf","tt dd ff","qq","fffffffffff"]))
+console.log(megaFriend(["rana","dfdff","eeeeeeeeee","ffdfdf","tt dd ff","qq","gggggggggg","ffffffffff","hhhhhhhhhh"]))
 
 
 
