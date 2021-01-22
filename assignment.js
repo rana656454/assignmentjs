@@ -19,7 +19,7 @@ function kilometerToMeter(walkDistance) {
     }    
 }
 
-console.log (kilometerToMeter(1))
+//console.log (kilometerToMeter(1))
 
 
 
@@ -58,7 +58,7 @@ else{
 }
 
 
-console.log(budgetCalculator(1,2,5))
+//console.log(budgetCalculator(1,2,5))
 
 
 // hotel cost
@@ -136,7 +136,7 @@ else{
 }
 
 
-console.log(megaFriend(["rana","dfdff","eeeeeeeeee","ffdfdf","tt dd ff","qq","gggggggggg","ffffffffff","hhhhhhhhhh"]))
+//console.log(megaFriend(["rana","dfdff","eeeeeeeeee","ffdfdf","tt dd ff","qq","gggggggggg","ffffffffff","hhhhhhhhhh"]))
 
 
 
